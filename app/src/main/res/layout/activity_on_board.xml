@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.onboard.OnBoardActivity"
+    android:id="@+id/onBoardActivity">
+
+    <include layout = "@layout/toolbar_transparent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerOnBoard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dampingRatio="0.5"
+        app:dotsColor="@color/colorMaterialWhite"
+        app:dotsStrokeColor="@color/colorMaterialBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/anim3"
+        app:dotsCornerRadius="2dp"
+        app:dotsSize="10dp"
+        app:dotsSpacing="6dp"
+        app:dotsStrokeWidth="2dp"
+        app:stiffness="300"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
