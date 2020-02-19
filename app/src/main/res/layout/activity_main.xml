@@ -13,43 +13,43 @@
         android:id="@+id/text_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginBottom="20dp"
         android:maxLines="4"
         android:textColor="@color/colorBlueDark"
         app:layout_constraintBottom_toTopOf="@+id/button_skills"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginLeft="10dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button_prev_work"
-        android:layout_width="170dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:background="@drawable/mybuttons"
         android:text="Previous work"
-        android:layout_marginLeft="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button_education"
-        android:layout_width="200dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/mybuttons"
         android:text="My Education"
-        android:layout_marginLeft="10dp"
         app:layout_constraintBottom_toTopOf="@+id/button_prev_work"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button_skills"
-        android:layout_width="230dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/mybuttons"
         android:text="My Skills"
-        android:layout_marginLeft="10dp"
         app:layout_constraintBottom_toTopOf="@+id/button_education"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -57,10 +57,10 @@
         android:id="@+id/button_suggestions"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="15dp"
         android:background="@drawable/mybuttons"
         android:text="Suggestions"
-        android:layout_marginLeft="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_prev_work" />
 
@@ -68,9 +68,9 @@
         android:id="@+id/button_contacts"
         android:layout_width="140dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
         android:background="@drawable/contactbuttin"
         android:text="Contacts"
-        android:layout_marginLeft="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_education" />
@@ -78,11 +78,20 @@
     <ImageView
         android:layout_width="600dp"
         android:layout_height="600dp"
-        android:src="@drawable/mee"
         android:layout_marginTop="280dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/mee"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toRightOf="@+id/button_skills"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
