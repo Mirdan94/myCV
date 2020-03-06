@@ -88,6 +88,8 @@ public class BoardFragment extends Fragment {
             public void onClick(View view) {
                 Activity parentActivity = getActivity();
                 startActivity(new Intent(parentActivity, MainActivity.class));
+                getActivity().overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
+                getActivity().finish();
             }
         });
     }

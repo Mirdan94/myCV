@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_big">20dp</dimen>
+    <dimen name="margin_big2">20dp</dimen>
+    <dimen name="margin_forty">40dp</dimen>
+    <dimen name="marginLeft">70dp</dimen>
+</resources>

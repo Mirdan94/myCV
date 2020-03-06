@@ -37,9 +37,7 @@ public class OnBoardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_on_board);
         fragment = new BoardFragment();
 
-
         initViews();
-
     }
 
     private void initViews () {
